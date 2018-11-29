@@ -1,3 +1,4 @@
+
 export default class DistrictRepository {
   constructor(data) {
     this.stats = this.filterData(data);
@@ -5,14 +6,14 @@ export default class DistrictRepository {
 
   filterData = (data) => {
     const newData = data.reduce((acc, district) => {
-      const roundedNum = isNaN(district.Data) ? 0 : parseFloat(parseFloat(district.Data).toFixed(3).toString())
-      if (!acc[district.Location]) {
+      const roundedNum = Math.round(district.Data * 1000) / 1000 || 0;
+      if (!acc[district.Location.toUpperCase()]) {
         acc[district.Location.toUpperCase()] = {
           location: district.Location.toUpperCase(),
           stats: {[district.TimeFrame]: roundedNum}
         }
       } else {
-        acc[district.Location].stats = Object.assign(acc[district.Location].stats, {[district.TimeFrame]: roundedNum})
+        acc[district.Location.toUpperCase()].stats = Object.assign(acc[district.Location.toUpperCase()].stats, {[district.TimeFrame]: roundedNum})
       }
       return acc;
     }, {})
@@ -20,8 +21,6 @@ export default class DistrictRepository {
   }
 
   findByName = (name) => {
-    let locations = Object.keys(this.stats)
-
     if (name) {
       return this.stats[name.toUpperCase()]
     }
@@ -29,12 +28,35 @@ export default class DistrictRepository {
 
   findAllMatches = (districts) => {
     const districtNames = Object.keys(this.stats)
+    let filteredLocations = districtNames;
     if (districts) {
-      return districtNames.filter((district) => {
+      filteredLocations = districtNames.filter((district) => {
         return district.toUpperCase().includes(districts.toUpperCase())
       })
-    } else {
-      return districtNames;
+    }
+
+    return filteredLocations.map(location => {
+      return this.stats[location]
+    })
+  }
+
+  findDistrictAverage = (district) => {
+    const values = Object.values(this.stats[district.toUpperCase()].stats)
+    let total = values.reduce((sum, stat) => {
+      sum += stat;
+      return sum;
+    }, 0) / values.length;
+
+    return Math.round(total * 1000) / 1000;
+  }
+  
+  compareDistrictAverages = (district1, district2) => {
+    let avg1 = this.findDistrictAverage(district1)
+    let avg2 = this.findDistrictAverage(district2)
+    return {
+      district1: avg1,
+      district2: avg2,
+      compared:  Math.round(avg1/avg2 * 1000) / 1000
     }
   }
 }
