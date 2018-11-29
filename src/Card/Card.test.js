@@ -1,5 +1,5 @@
 import React from 'react';
-import Data from './data/kindergartners_in_full_day_program.js';
+import Data from '../data/kindergartners_in_full_day_program.js';
 import Card from './Card.js';
 import {shallow} from 'enzyme';
 
