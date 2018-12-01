@@ -1,15 +1,5 @@
 .card-container {
   display: flex;
-  flex-direction: column;
-}
-
-.compare {
-  display: flex;
-  justify-content: center;
-}
-
-.all-cards {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }

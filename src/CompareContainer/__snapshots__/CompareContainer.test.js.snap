@@ -1,20 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardContainer should match the snapshot with data passed in correctly 1`] = `
+exports[`CompareContainer should match the snapshot with data passed in correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <CardContainer
-    data={
+  Symbol(enzyme.__unrendered__): <CompareContainer
+    compareDistrictAverages={[Function]}
+    selectedCards={
         Array [
             Object {
-              "location": "COLORADO",
+              "location": "COLORADO SPRINGS",
               "stats": Object {
-                "2005": 0.5,
+                "2005": 0.4,
               },
             },
           ]
     }
-    selectCard={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -30,19 +30,18 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Card
+        <SelectedDistrict
           district={
                     Object {
-                              "location": "COLORADO",
+                              "location": "COLORADO SPRINGS",
                               "stats": Object {
-                                "2005": 0.5,
+                                "2005": 0.4,
                               },
                             }
           }
-          selectCard={[Function]}
 />,
       ],
-      "className": "card-container",
+      "className": "compare-container",
     },
     "ref": null,
     "rendered": Array [
@@ -52,12 +51,11 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "district": Object {
-            "location": "COLORADO",
+            "location": "COLORADO SPRINGS",
             "stats": Object {
-              "2005": 0.5,
+              "2005": 0.4,
             },
           },
-          "selectCard": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -73,19 +71,18 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Card
+          <SelectedDistrict
             district={
                         Object {
-                                    "location": "COLORADO",
+                                    "location": "COLORADO SPRINGS",
                                     "stats": Object {
-                                      "2005": 0.5,
+                                      "2005": 0.4,
                                     },
                                   }
             }
-            selectCard={[Function]}
 />,
         ],
-        "className": "card-container",
+        "className": "compare-container",
       },
       "ref": null,
       "rendered": Array [
@@ -95,12 +92,11 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "district": Object {
-              "location": "COLORADO",
+              "location": "COLORADO SPRINGS",
               "stats": Object {
-                "2005": 0.5,
+                "2005": 0.4,
               },
             },
-            "selectCard": [Function],
           },
           "ref": null,
           "rendered": null,

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import DistrictRepository from '../helper';
 import CardContainer from '../CardContainer/CardContainer';
+import CompareContainer from '../CompareContainer/CompareContainer';
 import Search from '../Search/Search';
 import kinderData from '../data/kindergartners_in_full_day_program.js';
 
@@ -23,17 +24,19 @@ class App extends Component {
     this.setState({
       data: matches
     })
-    
+
   }
 
   selectCard = (district) => {
     let { selectedCards } = this.state
 
-    if (!selectedCards.length || selectedCards.length === 2) {
+    if (selectedCards.includes(district)) {
+      selectedCards = selectedCards.filter(card => card !== district)
+    } else if (!selectedCards.length) {
       selectedCards = [district]
-    } else if (selectedCards.length === 1 && !selectedCards.includes(district)) {
+    } else if (selectedCards.length === 1) {
       selectedCards = [...selectedCards, district]
-    }
+    } 
 
     this.setState({
       selectedCards
@@ -47,8 +50,9 @@ class App extends Component {
       <div className="main">
         <h1>HeadCount 2.0</h1>
         <Search data={this.kinderData} matchCards={this.matchCards}/>
-        <CardContainer data={data} selectCard={this.selectCard} selectedCards={selectedCards} 
-                       compareDistrictAverages={this.kinderData.compareDistrictAverages} />
+        <CompareContainer selectedCards={selectedCards} compareDistrictAverages={this.kinderData.compareDistrictAverages}/>
+        <CardContainer data={data} selectCard={this.selectCard} selectedCards={selectedCards}
+                        />
       </div>
     );
   }

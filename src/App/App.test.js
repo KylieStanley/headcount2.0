@@ -46,12 +46,12 @@ it('if selectedCards array has one item, calling selectCard will add a second di
   expect(wrapper.state().selectedCards.length).toBe(2);
 })
 
-it('if selectedCards array has two items, calling selectCard will remove all current items and add one', () => {
+it('if selectedCards array has two items, calling selectCard will not add any new cards', () => {
   const wrapper = shallow(<App />);
   expect(wrapper.state().selectedCards.length).toBe(0);
 
   wrapper.instance().selectCard('district1');
   wrapper.instance().selectCard('district2');
   wrapper.instance().selectCard('district3');
-  expect(wrapper.state().selectedCards.length).toBe(1);
+  expect(wrapper.state().selectedCards.length).toBe(2);
 })
