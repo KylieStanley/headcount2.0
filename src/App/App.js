@@ -13,7 +13,8 @@ class App extends Component {
     this.kinderData = new DistrictRepository(kinderData)
 
     this.state = {
-      data: this.kinderData.findAllMatches()
+      data: this.kinderData.findAllMatches(),
+      selectedCards: []
     }
   }
 
@@ -24,13 +25,29 @@ class App extends Component {
     })
   }
 
+  selectCard = (district) => {
+    let { selectedCards } = this.state
+
+    if (!selectedCards.length || selectedCards.length >= 2) {
+      selectedCards = [district]
+    } else if (selectedCards.length === 1) {
+      selectedCards = [...selectedCards, district]
+    }
+
+    this.setState({
+      selectedCards
+    }) 
+  }
+
+
   render() {
-    const { data } = this.state;
+    const { data, selectedCards } = this.state;
     return (
       <div className="main">
         <h1>HeadCount 2.0</h1>
         <Search data={this.kinderData} matchCards={this.matchCards}/>
-        <CardContainer data={data}/>
+        <CardContainer data={data} selectCard={this.selectCard} selectedCards={selectedCards} 
+                       compareDistrictAverages={this.kinderData.compareDistrictAverages} />
       </div>
     );
   }

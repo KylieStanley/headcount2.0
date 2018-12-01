@@ -9,7 +9,24 @@ ShallowWrapper {
             Object {
               "location": "COLORADO",
               "stats": Object {
-                "2004": 0.5,
+                "2005": 0.5,
+              },
+            },
+          ]
+    }
+    selectCard={[Function]}
+    selectedCards={
+        Array [
+            Object {
+              "location": "COLORADO",
+              "stats": Object {
+                "2005": 0.5,
+              },
+            },
+            Object {
+              "location": "COLORADO SPRINGS",
+              "stats": Object {
+                "2005": 0.4,
               },
             },
           ]
@@ -29,16 +46,47 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Card
-          district={
-                    Object {
-                              "location": "COLORADO",
-                              "stats": Object {
-                                "2004": 0.5,
-                              },
-                            }
-          }
-/>,
+        <div
+          className="compare"
+>
+          <Card
+                    district={
+                              Object {
+                                        "location": "COLORADO",
+                                        "stats": Object {
+                                          "2005": 0.5,
+                                        },
+                                      }
+                    }
+                    selectCard={[Function]}
+          />
+          <Card
+                    district={
+                              Object {
+                                        "location": "COLORADO SPRINGS",
+                                        "stats": Object {
+                                          "2005": 0.4,
+                                        },
+                                      }
+                    }
+                    selectCard={[Function]}
+          />
+</div>,
+        <div
+          className="all-cards"
+>
+          <Card
+                    district={
+                              Object {
+                                        "location": "COLORADO",
+                                        "stats": Object {
+                                          "2005": 0.5,
+                                        },
+                                      }
+                    }
+                    selectCard={[Function]}
+          />
+</div>,
       ],
       "className": "card-container",
     },
@@ -46,19 +94,115 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "0",
-        "nodeType": "function",
+        "key": undefined,
+        "nodeType": "host",
         "props": Object {
-          "district": Object {
-            "location": "COLORADO",
-            "stats": Object {
-              "2004": 0.5,
-            },
-          },
+          "children": Array [
+            <Card
+              district={
+                            Object {
+                                          "location": "COLORADO",
+                                          "stats": Object {
+                                            "2005": 0.5,
+                                          },
+                                        }
+              }
+              selectCard={[Function]}
+/>,
+            <Card
+              district={
+                            Object {
+                                          "location": "COLORADO SPRINGS",
+                                          "stats": Object {
+                                            "2005": 0.4,
+                                          },
+                                        }
+              }
+              selectCard={[Function]}
+/>,
+          ],
+          "className": "compare",
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "function",
+            "props": Object {
+              "district": Object {
+                "location": "COLORADO",
+                "stats": Object {
+                  "2005": 0.5,
+                },
+              },
+              "selectCard": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "function",
+            "props": Object {
+              "district": Object {
+                "location": "COLORADO SPRINGS",
+                "stats": Object {
+                  "2005": 0.4,
+                },
+              },
+              "selectCard": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Card
+              district={
+                            Object {
+                                          "location": "COLORADO",
+                                          "stats": Object {
+                                            "2005": 0.5,
+                                          },
+                                        }
+              }
+              selectCard={[Function]}
+/>,
+          ],
+          "className": "all-cards",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "function",
+            "props": Object {
+              "district": Object {
+                "location": "COLORADO",
+                "stats": Object {
+                  "2005": 0.5,
+                },
+              },
+              "selectCard": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
       },
     ],
     "type": "div",
@@ -70,16 +214,47 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Card
-            district={
-                        Object {
-                                    "location": "COLORADO",
-                                    "stats": Object {
-                                      "2004": 0.5,
-                                    },
-                                  }
-            }
-/>,
+          <div
+            className="compare"
+>
+            <Card
+                        district={
+                                    Object {
+                                                "location": "COLORADO",
+                                                "stats": Object {
+                                                  "2005": 0.5,
+                                                },
+                                              }
+                        }
+                        selectCard={[Function]}
+            />
+            <Card
+                        district={
+                                    Object {
+                                                "location": "COLORADO SPRINGS",
+                                                "stats": Object {
+                                                  "2005": 0.4,
+                                                },
+                                              }
+                        }
+                        selectCard={[Function]}
+            />
+</div>,
+          <div
+            className="all-cards"
+>
+            <Card
+                        district={
+                                    Object {
+                                                "location": "COLORADO",
+                                                "stats": Object {
+                                                  "2005": 0.5,
+                                                },
+                                              }
+                        }
+                        selectCard={[Function]}
+            />
+</div>,
         ],
         "className": "card-container",
       },
@@ -87,19 +262,115 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "0",
-          "nodeType": "function",
+          "key": undefined,
+          "nodeType": "host",
           "props": Object {
-            "district": Object {
-              "location": "COLORADO",
-              "stats": Object {
-                "2004": 0.5,
-              },
-            },
+            "children": Array [
+              <Card
+                district={
+                                Object {
+                                                "location": "COLORADO",
+                                                "stats": Object {
+                                                  "2005": 0.5,
+                                                },
+                                              }
+                }
+                selectCard={[Function]}
+/>,
+              <Card
+                district={
+                                Object {
+                                                "location": "COLORADO SPRINGS",
+                                                "stats": Object {
+                                                  "2005": 0.4,
+                                                },
+                                              }
+                }
+                selectCard={[Function]}
+/>,
+            ],
+            "className": "compare",
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "function",
+              "props": Object {
+                "district": Object {
+                  "location": "COLORADO",
+                  "stats": Object {
+                    "2005": 0.5,
+                  },
+                },
+                "selectCard": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "function",
+              "props": Object {
+                "district": Object {
+                  "location": "COLORADO SPRINGS",
+                  "stats": Object {
+                    "2005": 0.4,
+                  },
+                },
+                "selectCard": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Card
+                district={
+                                Object {
+                                                "location": "COLORADO",
+                                                "stats": Object {
+                                                  "2005": 0.5,
+                                                },
+                                              }
+                }
+                selectCard={[Function]}
+/>,
+            ],
+            "className": "all-cards",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "function",
+              "props": Object {
+                "district": Object {
+                  "location": "COLORADO",
+                  "stats": Object {
+                    "2005": 0.5,
+                  },
+                },
+                "selectCard": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",

@@ -40,7 +40,7 @@ export default class DistrictRepository {
     })
   }
 
-  findDistrictAverage = (district) => {
+  findAverage = (district) => {
     const values = Object.values(this.stats[district.toUpperCase()].stats)
     let total = values.reduce((sum, stat) => {
       sum += stat;
@@ -51,11 +51,11 @@ export default class DistrictRepository {
   }
   
   compareDistrictAverages = (district1, district2) => {
-    let avg1 = this.findDistrictAverage(district1)
-    let avg2 = this.findDistrictAverage(district2)
+    let avg1 = this.findAverage(district1)
+    let avg2 = this.findAverage(district2)
     return {
-      district1: avg1,
-      district2: avg2,
+      [district1.toUpperCase()]: avg1,
+      [district2.toUpperCase()]: avg2,
       compared:  Math.round(avg1/avg2 * 1000) / 1000
     }
   }

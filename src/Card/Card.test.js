@@ -8,8 +8,9 @@ describe('Card', () => {
   it('should match the snapshot with data passed in correctly', () => {
     const wrapper = shallow( <Card
       district={{location: "COLORADO",
-                  stats: {2004: .5}
+                  stats: {2004: .5},
                 }}
+      selectCard={jest.fn()}
     />);
 
     expect(wrapper).toMatchSnapshot();
@@ -20,6 +21,7 @@ describe('Card', () => {
       district={{location: "COLORADO",
                   stats: {2004: 0.24}
                 }}
+      selectCard={jest.fn()}
     />);
 
     expect(wrapper.find('li').hasClass('less-than'));
@@ -30,6 +32,7 @@ describe('Card', () => {
       district={{location: "COLORADO",
                   stats: {2004: 0.54}
                 }}
+      selectCard={jest.fn()}
     />);
     
     expect(wrapper.find('li').hasClass('greater-than'));

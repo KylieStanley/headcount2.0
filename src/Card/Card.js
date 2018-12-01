@@ -3,9 +3,8 @@ import './Card.css';
 
 const Card = (props) => {
 
-
     return (
-      <div className="card">
+      <div className="card" onClick={props.selectCard.bind(null, props.district)}>
         <h2>{props.district.location}</h2>
         <ul>
         {
@@ -18,6 +17,5 @@ const Card = (props) => {
       </div>
     );
   }
-
 
 export default Card;
