@@ -23,14 +23,15 @@ class App extends Component {
     this.setState({
       data: matches
     })
+    
   }
 
   selectCard = (district) => {
     let { selectedCards } = this.state
 
-    if (!selectedCards.length || selectedCards.length >= 2) {
+    if (!selectedCards.length || selectedCards.length === 2) {
       selectedCards = [district]
-    } else if (selectedCards.length === 1) {
+    } else if (selectedCards.length === 1 && !selectedCards.includes(district)) {
       selectedCards = [...selectedCards, district]
     }
 

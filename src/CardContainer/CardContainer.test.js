@@ -12,12 +12,10 @@ describe('CardContainer', () => {
               stats: {2005: .5}
             }]}
       selectCard={jest.fn()}
-      selectedCards={ [{location: "COLORADO",
-                       stats: {2005: .5}
-                      },
-                      {location: "COLORADO SPRINGS",
+      selectedCards={[{location: "COLORADO SPRINGS",
                        stats: {2005: .4}
                       }] }
+      compareDistrictAverages={jest.fn()}
     />);
 
     expect(wrapper).toMatchSnapshot();
@@ -31,14 +29,12 @@ describe('CardContainer', () => {
               stats: {2005: .5}
             }]}
       selectCard={jest.fn()}
-      selectedCards={ [{location: "COLORADO",
-                       stats: {2005: .5}
-                      },
-                      {location: "COLORADO SPRINGS",
+      selectedCards={[{location: "COLORADO SPRINGS",
                        stats: {2005: .4}
                       }] }
+      compareDistrictAverages={jest.fn()}
     />);
 
-    expect(wrapper.find(Card).length).toBe(4)
+    expect(wrapper.find(Card).length).toBe(3)
   })
 });
