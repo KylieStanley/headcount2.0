@@ -94,11 +94,9 @@ ReactWrapper {
                   <div
                                     class="search"
                   >
-                                    <p>
-                                                      Search by District:
-                                    </p>
                                     <input
                                                       type="text"
+                                                      placeholder=" Search by District"
                                                       value=""
                                     />
                   </div>
@@ -211,11 +209,9 @@ ReactWrapper {
                 <div
                                 class="search"
                 >
-                                <p>
-                                                Search by District:
-                                </p>
                                 <input
                                                 type="text"
+                                                placeholder=" Search by District"
                                                 value=""
                                 />
                 </div>
@@ -316,11 +312,9 @@ ReactWrapper {
                   <div
                                     class="search"
                   >
-                                    <p>
-                                                      Search by District:
-                                    </p>
                                     <input
                                                       type="text"
+                                                      placeholder=" Search by District"
                                                       value=""
                                     />
                   </div>
@@ -433,11 +427,9 @@ ReactWrapper {
                 <div
                                 class="search"
                 >
-                                <p>
-                                                Search by District:
-                                </p>
                                 <input
                                                 type="text"
+                                                placeholder=" Search by District"
                                                 value=""
                                 />
                 </div>
@@ -534,7 +526,7 @@ ReactWrapper {
           "_debugIsCurrentlyTiming": false,
           "_debugOwner": [Circular],
           "_debugSource": Object {
-            "fileName": "/Users/kyliestanley/Turing/Module3/headcount2.0/src/Search.js",
+            "fileName": "/Users/kyliestanley/Turing/Module3/headcount2.0/src/Search/Search.js",
             "lineNumber": 22,
           },
           "actualDuration": 0,
@@ -545,7 +537,7 @@ ReactWrapper {
             "_debugIsCurrentlyTiming": false,
             "_debugOwner": [Circular],
             "_debugSource": Object {
-              "fileName": "/Users/kyliestanley/Turing/Module3/headcount2.0/src/Search.js",
+              "fileName": "/Users/kyliestanley/Turing/Module3/headcount2.0/src/Search/Search.js",
               "lineNumber": 23,
             },
             "actualDuration": 0,
@@ -554,7 +546,7 @@ ReactWrapper {
             "child": null,
             "childExpirationTime": 0,
             "effectTag": 0,
-            "elementType": "p",
+            "elementType": "input",
             "expirationTime": 0,
             "firstContextDependency": null,
             "firstEffect": null,
@@ -562,70 +554,32 @@ ReactWrapper {
             "key": null,
             "lastEffect": null,
             "memoizedProps": Object {
-              "children": "Search by District:",
+              "onChange": [Function],
+              "placeholder": " Search by District",
+              "type": "text",
+              "value": "",
             },
             "memoizedState": null,
             "mode": 0,
             "nextEffect": null,
             "pendingProps": Object {
-              "children": "Search by District:",
+              "onChange": [Function],
+              "placeholder": " Search by District",
+              "type": "text",
+              "value": "",
             },
             "ref": null,
             "return": [Circular],
             "selfBaseDuration": 0,
-            "sibling": FiberNode {
-              "_debugID": 53,
-              "_debugIsCurrentlyTiming": false,
-              "_debugOwner": [Circular],
-              "_debugSource": Object {
-                "fileName": "/Users/kyliestanley/Turing/Module3/headcount2.0/src/Search.js",
-                "lineNumber": 24,
-              },
-              "actualDuration": 0,
-              "actualStartTime": -1,
-              "alternate": null,
-              "child": null,
-              "childExpirationTime": 0,
-              "effectTag": 0,
-              "elementType": "input",
-              "expirationTime": 0,
-              "firstContextDependency": null,
-              "firstEffect": null,
-              "index": 1,
-              "key": null,
-              "lastEffect": null,
-              "memoizedProps": Object {
-                "onChange": [Function],
-                "type": "text",
-                "value": "",
-              },
-              "memoizedState": null,
-              "mode": 0,
-              "nextEffect": null,
-              "pendingProps": Object {
-                "onChange": [Function],
-                "type": "text",
-                "value": "",
-              },
-              "ref": null,
-              "return": [Circular],
-              "selfBaseDuration": 0,
-              "sibling": null,
-              "stateNode": <input
-                type="text"
-                value=""
+            "sibling": null,
+            "stateNode": <input
+              type="text"
+              placeholder=" Search by District"
+              value=""
 />,
-              "tag": 5,
-              "treeBaseDuration": 0,
-              "type": "input",
-              "updateQueue": null,
-            },
-            "stateNode": <p>
-              Search by District:
-</p>,
             "tag": 5,
             "treeBaseDuration": 0,
-            "type": "p",
+            "type": "input",
             "updateQueue": null,
           },
           "childExpirationTime": 0,
@@ -638,32 +592,24 @@ ReactWrapper {
           "key": null,
           "lastEffect": null,
           "memoizedProps": Object {
-            "children": Array [
-              <p>
-                Search by District:
-</p>,
-              <input
-                onChange={[Function]}
-                type="text"
-                value=""
+            "children": <input
+              onChange={[Function]}
+              placeholder=" Search by District"
+              type="text"
+              value=""
 />,
-            ],
             "className": "search",
           },
           "memoizedState": null,
           "mode": 0,
           "nextEffect": null,
           "pendingProps": Object {
-            "children": Array [
-              <p>
-                Search by District:
-</p>,
-              <input
-                onChange={[Function]}
-                type="text"
-                value=""
+            "children": <input
+              onChange={[Function]}
+              placeholder=" Search by District"
+              type="text"
+              value=""
 />,
-            ],
             "className": "search",
           },
           "ref": null,
@@ -673,11 +619,9 @@ ReactWrapper {
           "stateNode": <div
             class="search"
 >
-            <p>
-                        Search by District:
-            </p>
             <input
                         type="text"
+                        placeholder=" Search by District"
                         value=""
             />
 </div>,
@@ -783,11 +727,9 @@ ReactWrapper {
                   <div
                                     class="search"
                   >
-                                    <p>
-                                                      Search by District:
-                                    </p>
                                     <input
                                                       type="text"
+                                                      placeholder=" Search by District"
                                                       value=""
                                     />
                   </div>
@@ -900,11 +842,9 @@ ReactWrapper {
                 <div
                                 class="search"
                 >
-                                <p>
-                                                Search by District:
-                                </p>
                                 <input
                                                 type="text"
+                                                placeholder=" Search by District"
                                                 value=""
                                 />
                 </div>
@@ -1005,11 +945,9 @@ ReactWrapper {
                   <div
                                     class="search"
                   >
-                                    <p>
-                                                      Search by District:
-                                    </p>
                                     <input
                                                       type="text"
+                                                      placeholder=" Search by District"
                                                       value=""
                                     />
                   </div>
@@ -1122,11 +1060,9 @@ ReactWrapper {
                 <div
                                 class="search"
                 >
-                                <p>
-                                                Search by District:
-                                </p>
                                 <input
                                                 type="text"
+                                                placeholder=" Search by District"
                                                 value=""
                                 />
                 </div>
@@ -1251,55 +1187,36 @@ ReactWrapper {
       "instance": <div
         class="search"
 >
-        <p>
-                Search by District:
-        </p>
         <input
                 type="text"
+                placeholder=" Search by District"
                 value=""
         />
 </div>,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": Array [
-          <p>
-            Search by District:
-</p>,
-          <input
-            onChange={[Function]}
-            type="text"
-            value=""
+        "children": <input
+          onChange={[Function]}
+          placeholder=" Search by District"
+          type="text"
+          value=""
 />,
-        ],
         "className": "search",
       },
       "ref": null,
       "rendered": Array [
         Object {
-          "instance": <p>
-            Search by District:
-</p>,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Search by District:",
-          },
-          "ref": null,
-          "rendered": Array [
-            "Search by District:",
-          ],
-          "type": "p",
-        },
-        Object {
           "instance": <input
             type="text"
+            placeholder=" Search by District"
             value=""
 />,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
             "onChange": [Function],
+            "placeholder": " Search by District",
             "type": "text",
             "value": "",
           },
@@ -1394,11 +1311,9 @@ ReactWrapper {
                     <div
                                         class="search"
                     >
-                                        <p>
-                                                            Search by District:
-                                        </p>
                                         <input
                                                             type="text"
+                                                            placeholder=" Search by District"
                                                             value=""
                                         />
                     </div>
@@ -1511,11 +1426,9 @@ ReactWrapper {
                   <div
                                     class="search"
                   >
-                                    <p>
-                                                      Search by District:
-                                    </p>
                                     <input
                                                       type="text"
+                                                      placeholder=" Search by District"
                                                       value=""
                                     />
                   </div>
@@ -1616,11 +1529,9 @@ ReactWrapper {
                     <div
                                         class="search"
                     >
-                                        <p>
-                                                            Search by District:
-                                        </p>
                                         <input
                                                             type="text"
+                                                            placeholder=" Search by District"
                                                             value=""
                                         />
                     </div>
@@ -1733,11 +1644,9 @@ ReactWrapper {
                   <div
                                     class="search"
                   >
-                                    <p>
-                                                      Search by District:
-                                    </p>
                                     <input
                                                       type="text"
+                                                      placeholder=" Search by District"
                                                       value=""
                                     />
                   </div>
@@ -1834,7 +1743,7 @@ ReactWrapper {
             "_debugIsCurrentlyTiming": false,
             "_debugOwner": [Circular],
             "_debugSource": Object {
-              "fileName": "/Users/kyliestanley/Turing/Module3/headcount2.0/src/Search.js",
+              "fileName": "/Users/kyliestanley/Turing/Module3/headcount2.0/src/Search/Search.js",
               "lineNumber": 22,
             },
             "actualDuration": 0,
@@ -1845,7 +1754,7 @@ ReactWrapper {
               "_debugIsCurrentlyTiming": false,
               "_debugOwner": [Circular],
               "_debugSource": Object {
-                "fileName": "/Users/kyliestanley/Turing/Module3/headcount2.0/src/Search.js",
+                "fileName": "/Users/kyliestanley/Turing/Module3/headcount2.0/src/Search/Search.js",
                 "lineNumber": 23,
               },
               "actualDuration": 0,
@@ -1854,7 +1763,7 @@ ReactWrapper {
               "child": null,
               "childExpirationTime": 0,
               "effectTag": 0,
-              "elementType": "p",
+              "elementType": "input",
               "expirationTime": 0,
               "firstContextDependency": null,
               "firstEffect": null,
@@ -1862,70 +1771,32 @@ ReactWrapper {
               "key": null,
               "lastEffect": null,
               "memoizedProps": Object {
-                "children": "Search by District:",
+                "onChange": [Function],
+                "placeholder": " Search by District",
+                "type": "text",
+                "value": "",
               },
               "memoizedState": null,
               "mode": 0,
               "nextEffect": null,
               "pendingProps": Object {
-                "children": "Search by District:",
+                "onChange": [Function],
+                "placeholder": " Search by District",
+                "type": "text",
+                "value": "",
               },
               "ref": null,
               "return": [Circular],
               "selfBaseDuration": 0,
-              "sibling": FiberNode {
-                "_debugID": 53,
-                "_debugIsCurrentlyTiming": false,
-                "_debugOwner": [Circular],
-                "_debugSource": Object {
-                  "fileName": "/Users/kyliestanley/Turing/Module3/headcount2.0/src/Search.js",
-                  "lineNumber": 24,
-                },
-                "actualDuration": 0,
-                "actualStartTime": -1,
-                "alternate": null,
-                "child": null,
-                "childExpirationTime": 0,
-                "effectTag": 0,
-                "elementType": "input",
-                "expirationTime": 0,
-                "firstContextDependency": null,
-                "firstEffect": null,
-                "index": 1,
-                "key": null,
-                "lastEffect": null,
-                "memoizedProps": Object {
-                  "onChange": [Function],
-                  "type": "text",
-                  "value": "",
-                },
-                "memoizedState": null,
-                "mode": 0,
-                "nextEffect": null,
-                "pendingProps": Object {
-                  "onChange": [Function],
-                  "type": "text",
-                  "value": "",
-                },
-                "ref": null,
-                "return": [Circular],
-                "selfBaseDuration": 0,
-                "sibling": null,
-                "stateNode": <input
-                  type="text"
-                  value=""
+              "sibling": null,
+              "stateNode": <input
+                type="text"
+                placeholder=" Search by District"
+                value=""
 />,
-                "tag": 5,
-                "treeBaseDuration": 0,
-                "type": "input",
-                "updateQueue": null,
-              },
-              "stateNode": <p>
-                Search by District:
-</p>,
               "tag": 5,
               "treeBaseDuration": 0,
-              "type": "p",
+              "type": "input",
               "updateQueue": null,
             },
             "childExpirationTime": 0,
@@ -1938,32 +1809,24 @@ ReactWrapper {
             "key": null,
             "lastEffect": null,
             "memoizedProps": Object {
-              "children": Array [
-                <p>
-                  Search by District:
-</p>,
-                <input
-                  onChange={[Function]}
-                  type="text"
-                  value=""
+              "children": <input
+                onChange={[Function]}
+                placeholder=" Search by District"
+                type="text"
+                value=""
 />,
-              ],
               "className": "search",
             },
             "memoizedState": null,
             "mode": 0,
             "nextEffect": null,
             "pendingProps": Object {
-              "children": Array [
-                <p>
-                  Search by District:
-</p>,
-                <input
-                  onChange={[Function]}
-                  type="text"
-                  value=""
+              "children": <input
+                onChange={[Function]}
+                placeholder=" Search by District"
+                type="text"
+                value=""
 />,
-              ],
               "className": "search",
             },
             "ref": null,
@@ -1973,11 +1836,9 @@ ReactWrapper {
             "stateNode": <div
               class="search"
 >
-              <p>
-                            Search by District:
-              </p>
               <input
                             type="text"
+                            placeholder=" Search by District"
                             value=""
               />
 </div>,
@@ -2083,11 +1944,9 @@ ReactWrapper {
                     <div
                                         class="search"
                     >
-                                        <p>
-                                                            Search by District:
-                                        </p>
                                         <input
                                                             type="text"
+                                                            placeholder=" Search by District"
                                                             value=""
                                         />
                     </div>
@@ -2200,11 +2059,9 @@ ReactWrapper {
                   <div
                                     class="search"
                   >
-                                    <p>
-                                                      Search by District:
-                                    </p>
                                     <input
                                                       type="text"
+                                                      placeholder=" Search by District"
                                                       value=""
                                     />
                   </div>
@@ -2305,11 +2162,9 @@ ReactWrapper {
                     <div
                                         class="search"
                     >
-                                        <p>
-                                                            Search by District:
-                                        </p>
                                         <input
                                                             type="text"
+                                                            placeholder=" Search by District"
                                                             value=""
                                         />
                     </div>
@@ -2422,11 +2277,9 @@ ReactWrapper {
                   <div
                                     class="search"
                   >
-                                    <p>
-                                                      Search by District:
-                                    </p>
                                     <input
                                                       type="text"
+                                                      placeholder=" Search by District"
                                                       value=""
                                     />
                   </div>
@@ -2551,55 +2404,36 @@ ReactWrapper {
         "instance": <div
           class="search"
 >
-          <p>
-                    Search by District:
-          </p>
           <input
                     type="text"
+                    placeholder=" Search by District"
                     value=""
           />
 </div>,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            <p>
-              Search by District:
-</p>,
-            <input
-              onChange={[Function]}
-              type="text"
-              value=""
+          "children": <input
+            onChange={[Function]}
+            placeholder=" Search by District"
+            type="text"
+            value=""
 />,
-          ],
           "className": "search",
         },
         "ref": null,
         "rendered": Array [
           Object {
-            "instance": <p>
-              Search by District:
-</p>,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Search by District:",
-            },
-            "ref": null,
-            "rendered": Array [
-              "Search by District:",
-            ],
-            "type": "p",
-          },
-          Object {
             "instance": <input
               type="text"
+              placeholder=" Search by District"
               value=""
 />,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
               "onChange": [Function],
+              "placeholder": " Search by District",
               "type": "text",
               "value": "",
             },

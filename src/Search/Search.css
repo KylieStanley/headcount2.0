@@ -1,3 +1,5 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
 .search {
   align-items: center;
   display: -ms-flexbox;
@@ -9,4 +11,15 @@
 
 p {
   margin-right: 5px;
+}
+
+input {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 1px solid gray;
+  font-family: 'Open Sans', "FontAwesome", sans-serif;
+  padding: 5px;
+  text-align: center;
+  width: 400px;
 }

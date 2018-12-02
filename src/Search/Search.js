@@ -20,8 +20,7 @@ class Search extends Component {
   render() {
     return (
       <div className="search">
-        <p>Search by District:</p>
-        <input type="text" value={this.state.district} onChange={this.handleSearch}></input>
+        <input type="text" placeholder="&#xf002; Search by District" value={this.state.district} onChange={this.handleSearch}></input>
       </div>
     );
   }
