@@ -1,18 +1,6 @@
 .card-container {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.card {
-  align-items: center;
-  border-radius: 20px;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 5px;
-  padding: 8px;
-  text-align: center;
-  width: 250px;
 }

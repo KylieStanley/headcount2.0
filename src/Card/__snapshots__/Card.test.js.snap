@@ -9,10 +9,22 @@ ShallowWrapper {
             "location": "COLORADO",
             "stats": Object {
               "2004": 0.5,
+              "2005": 0.4,
             },
           }
     }
     selectCard={[Function]}
+    selectedCards={
+        Array [
+            Object {
+              "location": "COLORADO",
+              "stats": Object {
+                "2004": 0.5,
+                "2005": 0.4,
+              },
+            },
+          ]
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -33,15 +45,22 @@ ShallowWrapper {
 </h2>,
         <ul>
           <li
-                    className="less-than"
+                    className="greater-than"
           >
                     2004
                     : 
                     0.5
           </li>
+          <li
+                    className="less-than"
+          >
+                    2005
+                    : 
+                    0.4
+          </li>
 </ul>,
       ],
-      "className": "card",
+      "className": "card selected",
       "onClick": [Function],
     },
     "ref": null,
@@ -64,11 +83,18 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <li
-              className="less-than"
+              className="greater-than"
 >
               2004
               : 
               0.5
+</li>,
+            <li
+              className="less-than"
+>
+              2005
+              : 
+              0.4
 </li>,
           ],
         },
@@ -84,13 +110,33 @@ ShallowWrapper {
                 ": ",
                 0.5,
               ],
-              "className": "less-than",
+              "className": "greater-than",
             },
             "ref": null,
             "rendered": Array [
               "2004",
               ": ",
               0.5,
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "2005",
+                ": ",
+                0.4,
+              ],
+              "className": "less-than",
+            },
+            "ref": null,
+            "rendered": Array [
+              "2005",
+              ": ",
+              0.4,
             ],
             "type": "li",
           },
@@ -112,15 +158,22 @@ ShallowWrapper {
 </h2>,
           <ul>
             <li
-                        className="less-than"
+                        className="greater-than"
             >
                         2004
                         : 
                         0.5
             </li>
+            <li
+                        className="less-than"
+            >
+                        2005
+                        : 
+                        0.4
+            </li>
 </ul>,
         ],
-        "className": "card",
+        "className": "card selected",
         "onClick": [Function],
       },
       "ref": null,
@@ -143,11 +196,18 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <li
-                className="less-than"
+                className="greater-than"
 >
                 2004
                 : 
                 0.5
+</li>,
+              <li
+                className="less-than"
+>
+                2005
+                : 
+                0.4
 </li>,
             ],
           },
@@ -163,13 +223,33 @@ ShallowWrapper {
                   ": ",
                   0.5,
                 ],
-                "className": "less-than",
+                "className": "greater-than",
               },
               "ref": null,
               "rendered": Array [
                 "2004",
                 ": ",
                 0.5,
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2005",
+                  ": ",
+                  0.4,
+                ],
+                "className": "less-than",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2005",
+                ": ",
+                0.4,
               ],
               "type": "li",
             },

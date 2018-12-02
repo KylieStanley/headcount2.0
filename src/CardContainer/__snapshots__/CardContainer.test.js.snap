@@ -1,11 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CardContainer should match the snapshot with data passed in correctly 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
+ReactWrapper {
   Symbol(enzyme.__unrendered__): <CardContainer
     data={
         Array [
+            Object {
+              "location": "COLORADO",
+              "stats": Object {
+                "2004": 0.5,
+              },
+            },
             Object {
               "location": "COLORADO",
               "stats": Object {
@@ -15,6 +20,16 @@ ShallowWrapper {
           ]
     }
     selectCard={[Function]}
+    selectedCards={
+        Array [
+            Object {
+              "location": "COLORADO SPRINGS",
+              "stats": Object {
+                "2005": 0.4,
+              },
+            },
+          ]
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -24,55 +39,99 @@ ShallowWrapper {
     "simulateEvent": [Function],
     "unmount": [Function],
   },
+  Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
-      "children": Array [
-        <Card
-          district={
-                    Object {
-                              "location": "COLORADO",
-                              "stats": Object {
-                                "2005": 0.5,
-                              },
-                            }
-          }
-          selectCard={[Function]}
-/>,
+      "data": Array [
+        Object {
+          "location": "COLORADO",
+          "stats": Object {
+            "2004": 0.5,
+          },
+        },
+        Object {
+          "location": "COLORADO",
+          "stats": Object {
+            "2005": 0.5,
+          },
+        },
       ],
-      "className": "card-container",
+      "selectCard": [Function],
+      "selectedCards": Array [
+        Object {
+          "location": "COLORADO SPRINGS",
+          "stats": Object {
+            "2005": 0.4,
+          },
+        },
+      ],
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": "0",
-        "nodeType": "function",
-        "props": Object {
-          "district": Object {
-            "location": "COLORADO",
-            "stats": Object {
-              "2005": 0.5,
-            },
-          },
-          "selectCard": [Function],
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
+    "rendered": Object {
+      "instance": <div
+        class="card-container"
+>
+        <div
+                class="card"
+        >
+                <h2>
+                        COLORADO
+                </h2>
+                <ul>
+                        <li
+                                class="greater-than"
+                        >
+                                2004
+                                : 
+                                0.5
+                        </li>
+                </ul>
+        </div>
+        <div
+                class="card"
+        >
+                <h2>
+                        COLORADO
+                </h2>
+                <ul>
+                        <li
+                                class="greater-than"
+                        >
+                                2005
+                                : 
+                                0.5
+                        </li>
+                </ul>
+        </div>
+</div>,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <Card
+            district={
+                        Object {
+                                    "location": "COLORADO",
+                                    "stats": Object {
+                                      "2004": 0.5,
+                                    },
+                                  }
+            }
+            selectCard={[Function]}
+            selectedCards={
+                        Array [
+                                    Object {
+                                      "location": "COLORADO SPRINGS",
+                                      "stats": Object {
+                                        "2005": 0.4,
+                                      },
+                                    },
+                                  ]
+            }
+/>,
           <Card
             district={
                         Object {
@@ -83,6 +142,16 @@ ShallowWrapper {
                                   }
             }
             selectCard={[Function]}
+            selectedCards={
+                        Array [
+                                    Object {
+                                      "location": "COLORADO SPRINGS",
+                                      "stats": Object {
+                                        "2005": 0.4,
+                                      },
+                                    },
+                                  ]
+            }
 />,
         ],
         "className": "card-container",
@@ -97,17 +166,666 @@ ShallowWrapper {
             "district": Object {
               "location": "COLORADO",
               "stats": Object {
+                "2004": 0.5,
+              },
+            },
+            "selectCard": [Function],
+            "selectedCards": Array [
+              Object {
+                "location": "COLORADO SPRINGS",
+                "stats": Object {
+                  "2005": 0.4,
+                },
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": <div
+              class="card"
+>
+              <h2>
+                            COLORADO
+              </h2>
+              <ul>
+                            <li
+                                          class="greater-than"
+                            >
+                                          2004
+                                          : 
+                                          0.5
+                            </li>
+              </ul>
+</div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  COLORADO
+</h2>,
+                <ul>
+                  <li
+                                    className="greater-than"
+                  >
+                                    2004
+                                    : 
+                                    0.5
+                  </li>
+</ul>,
+              ],
+              "className": "card",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <h2>
+                  COLORADO
+</h2>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "COLORADO",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "COLORADO",
+                ],
+                "type": "h2",
+              },
+              Object {
+                "instance": <ul>
+                  <li
+                                    class="greater-than"
+                  >
+                                    2004
+                                    : 
+                                    0.5
+                  </li>
+</ul>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <li
+                      className="greater-than"
+>
+                      2004
+                      : 
+                      0.5
+</li>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <li
+                      class="greater-than"
+>
+                      2004
+                      : 
+                      0.5
+</li>,
+                    "key": "0",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "2004",
+                        ": ",
+                        0.5,
+                      ],
+                      "className": "greater-than",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "2004",
+                      ": ",
+                      "0.5",
+                    ],
+                    "type": "li",
+                  },
+                ],
+                "type": "ul",
+              },
+            ],
+            "type": "div",
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "function",
+          "props": Object {
+            "district": Object {
+              "location": "COLORADO",
+              "stats": Object {
                 "2005": 0.5,
               },
             },
             "selectCard": [Function],
+            "selectedCards": Array [
+              Object {
+                "location": "COLORADO SPRINGS",
+                "stats": Object {
+                  "2005": 0.4,
+                },
+              },
+            ],
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Object {
+            "instance": <div
+              class="card"
+>
+              <h2>
+                            COLORADO
+              </h2>
+              <ul>
+                            <li
+                                          class="greater-than"
+                            >
+                                          2005
+                                          : 
+                                          0.5
+                            </li>
+              </ul>
+</div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h2>
+                  COLORADO
+</h2>,
+                <ul>
+                  <li
+                                    className="greater-than"
+                  >
+                                    2005
+                                    : 
+                                    0.5
+                  </li>
+</ul>,
+              ],
+              "className": "card",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <h2>
+                  COLORADO
+</h2>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "COLORADO",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "COLORADO",
+                ],
+                "type": "h2",
+              },
+              Object {
+                "instance": <ul>
+                  <li
+                                    class="greater-than"
+                  >
+                                    2005
+                                    : 
+                                    0.5
+                  </li>
+</ul>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <li
+                      className="greater-than"
+>
+                      2005
+                      : 
+                      0.5
+</li>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <li
+                      class="greater-than"
+>
+                      2005
+                      : 
+                      0.5
+</li>,
+                    "key": "0",
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "2005",
+                        ": ",
+                        0.5,
+                      ],
+                      "className": "greater-than",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "2005",
+                      ": ",
+                      "0.5",
+                    ],
+                    "type": "li",
+                  },
+                ],
+                "type": "ul",
+              },
+            ],
+            "type": "div",
+          },
           "type": [Function],
         },
       ],
       "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "data": Array [
+          Object {
+            "location": "COLORADO",
+            "stats": Object {
+              "2004": 0.5,
+            },
+          },
+          Object {
+            "location": "COLORADO",
+            "stats": Object {
+              "2005": 0.5,
+            },
+          },
+        ],
+        "selectCard": [Function],
+        "selectedCards": Array [
+          Object {
+            "location": "COLORADO SPRINGS",
+            "stats": Object {
+              "2005": 0.4,
+            },
+          },
+        ],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": <div
+          class="card-container"
+>
+          <div
+                    class="card"
+          >
+                    <h2>
+                              COLORADO
+                    </h2>
+                    <ul>
+                              <li
+                                        class="greater-than"
+                              >
+                                        2004
+                                        : 
+                                        0.5
+                              </li>
+                    </ul>
+          </div>
+          <div
+                    class="card"
+          >
+                    <h2>
+                              COLORADO
+                    </h2>
+                    <ul>
+                              <li
+                                        class="greater-than"
+                              >
+                                        2005
+                                        : 
+                                        0.5
+                              </li>
+                    </ul>
+          </div>
+</div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Card
+              district={
+                            Object {
+                                          "location": "COLORADO",
+                                          "stats": Object {
+                                            "2004": 0.5,
+                                          },
+                                        }
+              }
+              selectCard={[Function]}
+              selectedCards={
+                            Array [
+                                          Object {
+                                            "location": "COLORADO SPRINGS",
+                                            "stats": Object {
+                                              "2005": 0.4,
+                                            },
+                                          },
+                                        ]
+              }
+/>,
+            <Card
+              district={
+                            Object {
+                                          "location": "COLORADO",
+                                          "stats": Object {
+                                            "2005": 0.5,
+                                          },
+                                        }
+              }
+              selectCard={[Function]}
+              selectedCards={
+                            Array [
+                                          Object {
+                                            "location": "COLORADO SPRINGS",
+                                            "stats": Object {
+                                              "2005": 0.4,
+                                            },
+                                          },
+                                        ]
+              }
+/>,
+          ],
+          "className": "card-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "function",
+            "props": Object {
+              "district": Object {
+                "location": "COLORADO",
+                "stats": Object {
+                  "2004": 0.5,
+                },
+              },
+              "selectCard": [Function],
+              "selectedCards": Array [
+                Object {
+                  "location": "COLORADO SPRINGS",
+                  "stats": Object {
+                    "2005": 0.4,
+                  },
+                },
+              ],
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": <div
+                class="card"
+>
+                <h2>
+                                COLORADO
+                </h2>
+                <ul>
+                                <li
+                                                class="greater-than"
+                                >
+                                                2004
+                                                : 
+                                                0.5
+                                </li>
+                </ul>
+</div>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2>
+                    COLORADO
+</h2>,
+                  <ul>
+                    <li
+                                        className="greater-than"
+                    >
+                                        2004
+                                        : 
+                                        0.5
+                    </li>
+</ul>,
+                ],
+                "className": "card",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <h2>
+                    COLORADO
+</h2>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "COLORADO",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "COLORADO",
+                  ],
+                  "type": "h2",
+                },
+                Object {
+                  "instance": <ul>
+                    <li
+                                        class="greater-than"
+                    >
+                                        2004
+                                        : 
+                                        0.5
+                    </li>
+</ul>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <li
+                        className="greater-than"
+>
+                        2004
+                        : 
+                        0.5
+</li>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <li
+                        class="greater-than"
+>
+                        2004
+                        : 
+                        0.5
+</li>,
+                      "key": "0",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "2004",
+                          ": ",
+                          0.5,
+                        ],
+                        "className": "greater-than",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "2004",
+                        ": ",
+                        "0.5",
+                      ],
+                      "type": "li",
+                    },
+                  ],
+                  "type": "ul",
+                },
+              ],
+              "type": "div",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "function",
+            "props": Object {
+              "district": Object {
+                "location": "COLORADO",
+                "stats": Object {
+                  "2005": 0.5,
+                },
+              },
+              "selectCard": [Function],
+              "selectedCards": Array [
+                Object {
+                  "location": "COLORADO SPRINGS",
+                  "stats": Object {
+                    "2005": 0.4,
+                  },
+                },
+              ],
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": <div
+                class="card"
+>
+                <h2>
+                                COLORADO
+                </h2>
+                <ul>
+                                <li
+                                                class="greater-than"
+                                >
+                                                2005
+                                                : 
+                                                0.5
+                                </li>
+                </ul>
+</div>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2>
+                    COLORADO
+</h2>,
+                  <ul>
+                    <li
+                                        className="greater-than"
+                    >
+                                        2005
+                                        : 
+                                        0.5
+                    </li>
+</ul>,
+                ],
+                "className": "card",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <h2>
+                    COLORADO
+</h2>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "COLORADO",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "COLORADO",
+                  ],
+                  "type": "h2",
+                },
+                Object {
+                  "instance": <ul>
+                    <li
+                                        class="greater-than"
+                    >
+                                        2005
+                                        : 
+                                        0.5
+                    </li>
+</ul>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <li
+                        className="greater-than"
+>
+                        2005
+                        : 
+                        0.5
+</li>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <li
+                        class="greater-than"
+>
+                        2005
+                        : 
+                        0.5
+</li>,
+                      "key": "0",
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          "2005",
+                          ": ",
+                          0.5,
+                        ],
+                        "className": "greater-than",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "2005",
+                        ": ",
+                        "0.5",
+                      ],
+                      "type": "li",
+                    },
+                  ],
+                  "type": "ul",
+                },
+              ],
+              "type": "div",
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {

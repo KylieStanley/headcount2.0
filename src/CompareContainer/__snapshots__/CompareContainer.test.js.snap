@@ -30,7 +30,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <SelectedDistrict
+        <Card
           district={
                     Object {
                               "location": "COLORADO SPRINGS",
@@ -38,6 +38,32 @@ ShallowWrapper {
                                 "2005": 0.4,
                               },
                             }
+          }
+          selectCard={undefined}
+          selectedCards={
+                    Array [
+                              Object {
+                                "location": "COLORADO SPRINGS",
+                                "stats": Object {
+                                  "2005": 0.4,
+                                },
+                              },
+                            ]
+          }
+/>,
+        <CompareCard
+          comparedDistricts={undefined}
+          district1={undefined}
+          district2={undefined}
+          selectedCards={
+                    Array [
+                              Object {
+                                "location": "COLORADO SPRINGS",
+                                "stats": Object {
+                                  "2005": 0.4,
+                                },
+                              },
+                            ]
           }
 />,
       ],
@@ -56,6 +82,36 @@ ShallowWrapper {
               "2005": 0.4,
             },
           },
+          "selectCard": undefined,
+          "selectedCards": Array [
+            Object {
+              "location": "COLORADO SPRINGS",
+              "stats": Object {
+                "2005": 0.4,
+              },
+            },
+          ],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "function",
+        "props": Object {
+          "comparedDistricts": undefined,
+          "district1": undefined,
+          "district2": undefined,
+          "selectedCards": Array [
+            Object {
+              "location": "COLORADO SPRINGS",
+              "stats": Object {
+                "2005": 0.4,
+              },
+            },
+          ],
         },
         "ref": null,
         "rendered": null,
@@ -71,7 +127,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <SelectedDistrict
+          <Card
             district={
                         Object {
                                     "location": "COLORADO SPRINGS",
@@ -79,6 +135,32 @@ ShallowWrapper {
                                       "2005": 0.4,
                                     },
                                   }
+            }
+            selectCard={undefined}
+            selectedCards={
+                        Array [
+                                    Object {
+                                      "location": "COLORADO SPRINGS",
+                                      "stats": Object {
+                                        "2005": 0.4,
+                                      },
+                                    },
+                                  ]
+            }
+/>,
+          <CompareCard
+            comparedDistricts={undefined}
+            district1={undefined}
+            district2={undefined}
+            selectedCards={
+                        Array [
+                                    Object {
+                                      "location": "COLORADO SPRINGS",
+                                      "stats": Object {
+                                        "2005": 0.4,
+                                      },
+                                    },
+                                  ]
             }
 />,
         ],
@@ -97,6 +179,36 @@ ShallowWrapper {
                 "2005": 0.4,
               },
             },
+            "selectCard": undefined,
+            "selectedCards": Array [
+              Object {
+                "location": "COLORADO SPRINGS",
+                "stats": Object {
+                  "2005": 0.4,
+                },
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "function",
+          "props": Object {
+            "comparedDistricts": undefined,
+            "district1": undefined,
+            "district2": undefined,
+            "selectedCards": Array [
+              Object {
+                "location": "COLORADO SPRINGS",
+                "stats": Object {
+                  "2005": 0.4,
+                },
+              },
+            ],
           },
           "ref": null,
           "rendered": null,

@@ -24,33 +24,39 @@ class App extends Component {
     this.setState({
       data: matches
     })
-
   }
 
   selectCard = (district) => {
     let { selectedCards } = this.state
 
-    if (selectedCards.includes(district)) {
-      selectedCards = selectedCards.filter(card => card !== district)
-    } else if (!selectedCards.length) {
-      selectedCards = [district]
-    } else if (selectedCards.length === 1) {
-      selectedCards = [...selectedCards, district]
-    } 
+    switch(true) {
+      case selectedCards.includes(district):
+        selectedCards = selectedCards.filter(card => card !== district);
+        break;
+      case !selectedCards.length:
+        selectedCards = [district];
+        break;
+      case (selectedCards.length === 1):
+        selectedCards = [...selectedCards, district];
+        break;
+      default:
+        selectedCards;
+    }
 
     this.setState({
       selectedCards
     }) 
   }
 
-
   render() {
     const { data, selectedCards } = this.state;
     return (
       <div className="main">
-        <h1>HeadCount 2.0</h1>
+        <header>
+          <h1>HeadCount 2.0</h1>
+        </header>
         <Search data={this.kinderData} matchCards={this.matchCards}/>
-        <CompareContainer selectedCards={selectedCards} compareDistrictAverages={this.kinderData.compareDistrictAverages}/>
+        <CompareContainer selectedCards={selectedCards} compareDistrictAverages={this.kinderData.compareDistrictAverages} selectCard={this.selectCard}/>
         <CardContainer data={data} selectCard={this.selectCard} selectedCards={selectedCards}
                         />
       </div>
