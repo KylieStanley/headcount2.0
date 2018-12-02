@@ -1,4 +1,6 @@
 import React from 'react';
+import './CompareCard.css'
+
 
 const CompareCard = ({ selectedCards, comparedDistricts, district1, district2 }) => {
  

@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab');
 
+.main {
+  background-color: #f7f7f7;
+}
 
 header {
   align-items: center;

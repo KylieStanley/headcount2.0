@@ -17,7 +17,8 @@ input {
   font-size: 1.5rem;
   font-weight: bold;
   border-radius: 10px;
-  border: 1px solid gray;
+  border: 1px solid #e6e6e6;
+  box-shadow: inset 2px 2px 1px 0px #ababab;
   font-family: 'Open Sans', "FontAwesome", sans-serif;
   padding: 5px;
   text-align: center;
