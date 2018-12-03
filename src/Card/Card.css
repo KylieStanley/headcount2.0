@@ -24,11 +24,12 @@
 
 ul {
   list-style-type: none;
+  margin-top: 6px;
   padding: 0;
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 0;
   text-align: center;
 }
@@ -36,8 +37,4 @@ h2 {
 .greater-than {
   font-weight: bold;
   color: #008bc5;
-}
-
-.less-than {
-
 }
