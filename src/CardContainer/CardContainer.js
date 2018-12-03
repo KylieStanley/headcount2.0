@@ -7,7 +7,12 @@ import PropTypes from 'prop-types';
 const CardContainer = ({ data, selectCard, selectedCards }) => {
 
   const allCards = data.map((district, i) => {
-                  return <Card district={district} key={district.location} selectCard={selectCard} selectedCards={selectedCards}/>
+                  return <Card 
+                    district={district} 
+                    key={district.location} 
+                    selectCard={selectCard} 
+                    selectedCards={selectedCards}
+                  />
                 })
 
   return (
