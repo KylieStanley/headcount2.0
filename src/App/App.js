@@ -14,9 +14,15 @@ class App extends Component {
     this.kinderData = new DistrictRepository(kinderData)
 
     this.state = {
-      data: this.kinderData.findAllMatches(),
+      data: [],
       selectedCards: []
     }
+  }
+
+  componentDidMount() {
+    this.setState({
+      data: this.kinderData.findAllMatches()
+    })
   }
 
   matchCards = (district) => {
