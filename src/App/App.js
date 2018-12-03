@@ -56,9 +56,16 @@ class App extends Component {
           <h1>HeadCount 2.0</h1>
         </header>
         <Search matchCards={this.matchCards}/>
-        <CompareContainer selectedCards={selectedCards} compareDistrictAverages={this.kinderData.compareDistrictAverages} selectCard={this.selectCard}/>
-        <CardContainer data={data} selectCard={this.selectCard} selectedCards={selectedCards}
-                        />
+        <CompareContainer 
+          selectedCards={selectedCards} 
+          compareDistrictAverages={this.kinderData.compareDistrictAverages} 
+          selectCard={this.selectCard}
+        />
+        <CardContainer 
+          data={data} 
+          selectCard={this.selectCard} 
+          selectedCards={selectedCards}
+        />
       </div>
     );
   }
