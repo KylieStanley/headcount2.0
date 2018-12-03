@@ -27,3 +27,5 @@ HeadCount 2.0 is an application that allows you to take two different school dis
 
 
 ### Screenshots
+
+![image](https://user-images.githubusercontent.com/37158924/49384309-f85c4c00-f6d7-11e8-829e-ec79b6fedcc4.png)
