@@ -66,6 +66,7 @@ ShallowWrapper {
                             ]
           }
 />,
+        <BlankCard />,
       ],
       "className": "compare-container",
     },
@@ -73,7 +74,7 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "0",
+        "key": "COLORADO SPRINGS",
         "nodeType": "function",
         "props": Object {
           "district": Object {
@@ -113,6 +114,15 @@ ShallowWrapper {
             },
           ],
         },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "function",
+        "props": Object {},
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -163,6 +173,7 @@ ShallowWrapper {
                                   ]
             }
 />,
+          <BlankCard />,
         ],
         "className": "compare-container",
       },
@@ -170,7 +181,7 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "0",
+          "key": "COLORADO SPRINGS",
           "nodeType": "function",
           "props": Object {
             "district": Object {
@@ -210,6 +221,15 @@ ShallowWrapper {
               },
             ],
           },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "function",
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],

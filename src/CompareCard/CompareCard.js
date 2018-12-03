@@ -15,7 +15,7 @@ const CompareCard = ({ selectedCards, comparedDistricts, district1, district2 })
   }
 
    const waitingToCompare = <div className="card compare">
-                              <h3>Choose Two Districts to Compare!</h3>
+                              <h3>Choose Two Districts to Compare</h3>
                             </div>
 
   return (

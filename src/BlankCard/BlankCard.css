@@ -1,0 +1,6 @@
+.blank {
+  align-items: center;
+  border: 6px double #008bc5cc;
+  display: flex;
+  justify-content: center;
+}
