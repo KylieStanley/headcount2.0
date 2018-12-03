@@ -14,7 +14,7 @@ class Search extends Component {
   handleSearch = (e) => {
     this.setState({
       district: e.target.value
-      }, () => this.props.matchCards(this.state.district)
+      }, () => this.props.filterCards(this.state.district)
     )
   }
 

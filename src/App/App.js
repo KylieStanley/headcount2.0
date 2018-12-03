@@ -25,7 +25,7 @@ class App extends Component {
     })
   }
 
-  matchCards = (district) => {
+  filterCards = (district) => {
     const matches = this.kinderData.findAllMatches(district)
     this.setState({
       data: matches
@@ -61,7 +61,7 @@ class App extends Component {
         <header>
           <h1>HeadCount 2.0</h1>
         </header>
-        <Search matchCards={this.matchCards}/>
+        <Search filterCards={this.filterCards}/>
         <CompareContainer 
           selectedCards={selectedCards} 
           compareDistrictAverages={this.kinderData.compareDistrictAverages} 
