@@ -10,7 +10,7 @@ const BlankCard = () => {
 
   return (
     <div className="card blank">
-      <h3>Select a School District</h3>
+      <h3>School District</h3>
       <FontAwesomeIcon icon="apple-alt"/>
     </div>
   )
