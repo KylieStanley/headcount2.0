@@ -19,7 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h3>
-          Select a School District
+          School District
 </h3>,
         <FontAwesomeIcon
           border={false}
@@ -49,10 +49,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Select a School District",
+          "children": "School District",
         },
         "ref": null,
-        "rendered": "Select a School District",
+        "rendered": "School District",
         "type": "h3",
       },
       Object {
@@ -92,7 +92,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h3>
-            Select a School District
+            School District
 </h3>,
           <FontAwesomeIcon
             border={false}
@@ -122,10 +122,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Select a School District",
+            "children": "School District",
           },
           "ref": null,
-          "rendered": "Select a School District",
+          "rendered": "School District",
           "type": "h3",
         },
         Object {

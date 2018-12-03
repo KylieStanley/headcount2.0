@@ -99,7 +99,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "3",
+        "key": undefined,
         "nodeType": "function",
         "props": Object {
           "comparedDistricts": undefined,
@@ -120,7 +120,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "0",
+        "key": "card2",
         "nodeType": "function",
         "props": Object {},
         "ref": null,
@@ -206,7 +206,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "3",
+          "key": undefined,
           "nodeType": "function",
           "props": Object {
             "comparedDistricts": undefined,
@@ -227,7 +227,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "0",
+          "key": "card2",
           "nodeType": "function",
           "props": Object {},
           "ref": null,
