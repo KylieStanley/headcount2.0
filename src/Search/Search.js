@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Search.css'
+import PropTypes from 'prop-types';
 
 
 class Search extends Component {
@@ -25,5 +26,10 @@ class Search extends Component {
     );
   }
 }
+
+Search.propTypes = {
+  matchCards: PropTypes.func.isRequired
+}
+
 
 export default Search;

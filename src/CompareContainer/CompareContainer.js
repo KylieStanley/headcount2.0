@@ -2,6 +2,8 @@ import React from 'react';
 import Card from '../Card/Card'
 import CompareCard from '../CompareCard/CompareCard'
 import './CompareContainer.css'
+import PropTypes from 'prop-types';
+
 
 const CompareContainer = ({ selectedCards, compareDistrictAverages, selectCard }) => {
 
@@ -26,5 +28,9 @@ const CompareContainer = ({ selectedCards, compareDistrictAverages, selectCard }
   );
 }
 
+CompareContainer.propTypes = {
+  selectedCards: PropTypes.array.isRequired,
+  compareDistrictAverages: PropTypes.func.isRequired
+}
 
 export default CompareContainer;

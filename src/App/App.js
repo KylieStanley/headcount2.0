@@ -55,7 +55,7 @@ class App extends Component {
         <header>
           <h1>HeadCount 2.0</h1>
         </header>
-        <Search data={this.kinderData} matchCards={this.matchCards}/>
+        <Search matchCards={this.matchCards}/>
         <CompareContainer selectedCards={selectedCards} compareDistrictAverages={this.kinderData.compareDistrictAverages} selectCard={this.selectCard}/>
         <CardContainer data={data} selectCard={this.selectCard} selectedCards={selectedCards}
                         />

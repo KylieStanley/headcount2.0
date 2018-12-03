@@ -160,7 +160,7 @@ ReactWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "0",
+          "key": "COLORADO",
           "nodeType": "function",
           "props": Object {
             "district": Object {
@@ -267,7 +267,7 @@ ReactWrapper {
                       : 
                       0.5
 </li>,
-                    "key": "0",
+                    "key": "2004",
                     "nodeType": "host",
                     "props": Object {
                       "children": Array [
@@ -295,7 +295,7 @@ ReactWrapper {
         },
         Object {
           "instance": null,
-          "key": "1",
+          "key": "COLORADO",
           "nodeType": "function",
           "props": Object {
             "district": Object {
@@ -402,7 +402,7 @@ ReactWrapper {
                       : 
                       0.5
 </li>,
-                    "key": "0",
+                    "key": "2005",
                     "nodeType": "host",
                     "props": Object {
                       "children": Array [
@@ -554,7 +554,7 @@ ReactWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": "0",
+            "key": "COLORADO",
             "nodeType": "function",
             "props": Object {
               "district": Object {
@@ -661,7 +661,7 @@ ReactWrapper {
                         : 
                         0.5
 </li>,
-                      "key": "0",
+                      "key": "2004",
                       "nodeType": "host",
                       "props": Object {
                         "children": Array [
@@ -689,7 +689,7 @@ ReactWrapper {
           },
           Object {
             "instance": null,
-            "key": "1",
+            "key": "COLORADO",
             "nodeType": "function",
             "props": Object {
               "district": Object {
@@ -796,7 +796,7 @@ ReactWrapper {
                         : 
                         0.5
 </li>,
-                      "key": "0",
+                      "key": "2005",
                       "nodeType": "host",
                       "props": Object {
                         "children": Array [

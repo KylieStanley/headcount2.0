@@ -10,7 +10,6 @@ describe('Search', () => {
   beforeEach(() => {
     mockMatchCards = jest.fn()
     wrapper = mount(<Search 
-      data={[]} 
       matchCards={mockMatchCards}
     />);
   });
